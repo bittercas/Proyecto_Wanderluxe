@@ -1,0 +1,229 @@
+/*.section {
+    position: relative;
+    height: 50vh;
+}
+
+.section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+#booking {
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    background-position: center;
+    font-weight: 300;
+}
+
+.booking-form {
+    background: #fff;
+    padding: 15px; 
+    border-radius: 4px;
+    width: 50%; 
+    margin: auto; 
+}
+
+.booking-form .form-group {
+    position: relative;
+    margin-bottom: 15px; 
+}
+
+
+.booking-form .form-control {
+    border: none;
+    height: 40px; 
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px; 
+    color: #090a0b;
+    font-weight: 300;
+    background: #f2f1f1;
+    border-radius: 4px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+    color: #b1b6bd;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+    color: #b1b6bd;
+}
+
+.booking-form .form-control::placeholder {
+    color: #b1b6bd;
+}
+
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 40px; 
+    font-size: 16px; 
+}
+
+.booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    text-align: center;
+    pointer-events: none;
+    height: 40px;
+    line-height: 40px;
+    color: #b1b6bd;
+    font-size: 12px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+.booking-form .form-label {
+    color: #184c8f;
+    display: block;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    position: relative;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+
+.booking-form .submit-btn {
+    background: #184c8f;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 50px; 
+    font-size: 14px; 
+    width: 100%;
+    color: #fff;
+    border-radius: 4px;
+    display: block;
+}
+	*/
+
+
+.info_form {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.info_form {
+    top: 30%;
+}
+
+.info_form h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tituloSesion {
+	font-size: 0.5em;
+	margin-top: 100%;
+    text-align: center;
+    padding-top: 7%;
+    color: black;
+}
+
+#formulario {
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 2%;
+    border: 2px solid #ba9677;
+    background-color: #d7c0ab;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 5%;
+}
+
+#formulario div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+#formulario label {
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 5px;
+}
+
+#formulario input {
+    border-color: #ba9677;
+    height: 30px;
+    border-width: 3.5px;
+    border-radius: 5px;
+    width: 80%; 
+    max-width: 200px;
+    text-align: center; 
+}
+
+.primero, .segundo, .tercero, .cuarto, .quinto {
+    margin-bottom: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingreso {
+	width: 150px;
+	height: 30px;
+    margin-top: 2%;
+    text-align: center;
+    background-color: brown;
+    border-radius: 5px;
+}
+
+.ingreso:hover {
+	background-color: #d7c0ab;
+	color: white;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 10%;
+}
+
+.registrarUsuario {
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0.7em 1em;
+    color: black;
+}
+
+.registrarUsuario:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+.obligatorio {
+    color: rgb(189, 12, 12);
+}
+
+.marcado {
+    font-weight: bold;
+}

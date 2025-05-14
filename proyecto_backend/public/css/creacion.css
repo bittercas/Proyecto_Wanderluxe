@@ -1,0 +1,29 @@
+.exito {
+    margin-top: 5%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.volver {
+    color: antiquewhite;
+    text-align: center;
+}
+
+.volver a:hover {
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+    .exito {
+        margin-top: 15%;
+        font-size: 2em;
+    }
+}
+
+/* Móviles */
+@media screen and (max-width: 480px) {
+    .exito {
+        margin-top: 20%;
+        font-size: 0.5;
+    }
+}

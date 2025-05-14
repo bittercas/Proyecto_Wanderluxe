@@ -1,0 +1,123 @@
+.opciones-section {
+    padding: 4em 2em;
+    background-image: url("/img/abu4.jpg");
+    background-size: cover;            /* Ajusta el tamaño al viewport */
+    background-repeat: no-repeat;      /* Evita que se repita */
+    background-attachment: fixed;      /* Para efecto de parallax */
+    background-position: center; 
+}
+
+.opciones-seccion {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    color: #ba9677;
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+}
+
+.contenedor-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.tarjeta-opciones {
+    background-color: white;
+    border: 3px solid #7cb46b;
+    border-radius: 12px;
+    padding: 1.5em;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-opciones:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-opciones h3 {
+    color: #ba9677;
+    margin-bottom: 0.8em;
+}
+
+.tarjeta-opciones p {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 0.5em;
+}
+
+#cerrar:hover {
+    color: rgb(176, 13, 13);
+}
+
+.boton {
+    padding: 0.25rem 0.6rem;
+    background-color: #ba9677;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.75rem; /* ~12px */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+    background-color: #7cb46b;
+    transform: scale(1.05);
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.opciones-imagen {
+    width: 230px;
+    height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .opciones-seccion {
+        font-size: 1.6em;
+        margin-top: 0.8em;
+    }
+
+    .tarjeta-opciones {
+        max-width: 90%;
+    }
+
+    .opciones-imagen {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .opciones-seccion {
+        font-size: 1.4em;
+        margin-top: 0.5em;
+    }
+
+    .tarjeta-opciones {
+        padding: 1em;
+    }
+
+    .tarjeta-opciones p {
+        font-size: 0.9em;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .boton {
+        font-size: 0.7rem;
+    }
+}

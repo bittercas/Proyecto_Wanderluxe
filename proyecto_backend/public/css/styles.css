@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: beige;
+  }
+
+  #inicio {
+    position: sticky;
+    background-color: rgb(231, 231, 209);
+    text-align: center;
+    width: 100%;
+  }
+
+  .bloque{
+    display: inline-block;
+    padding: 0.7em 1em;
+    transition: 0.5s;
+  }
+
+  a {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0.7em 1em;
+    color: rgba(52, 46, 46, 0.562);
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+  }
+
+  .mejora_imagen {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+  .carrusel {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+  .carrusel ul{
+    display: flex;
+    width: 600%;
+    height: 100vh;
+    animation: slide 40s infinite ease-in-out;
+  }
+
+  .carrusel li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+  }
+
+  .info_primera_pagina{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+  }
+
+  .info_primera_pagina h1{
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .info_primera_pagina p{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 35px;
+  }
+
+  .info_imagen{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+  }
+
+  .info_imagen h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+  }
+
+  .beige{
+    color: rgb(231, 231, 209);
+    font-size: 25px;
+    margin-bottom: 35px;
+    font-weight: bold;
+  }
+
+  .foto-1 {
+    width: 250px;  /* Ajusta el tamaño de la imagen según necesites */
+    height: auto;  /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    float: left;  /* Hace que la imagen flote a la izquierda */
+}
+  
+  .foto-2 {
+    float: right;
+    width: 500px;
+    height: 400px;
+    margin-left: 30px;
+  }
+  
+  .foto-3 {
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .foto-4 {
+    float: right;
+    width: 600px;
+    height: 400px;
+    margin-left: 30px;
+  }
+
+  @keyframes slide {
+    0% { margin-left: 0%; }              /* Primera imagen */
+    16.66% { margin-left: 0%; }          /* Primera imagen */
+    20% { margin-left: -100%; }          /* Segunda imagen */
+    36.66% { margin-left: -100%; }       /* Segunda imagen */
+    40% { margin-left: -200%; }          /* Tercera imagen */
+    56.66% { margin-left: -200%; }       /* Tercera imagen */
+    60% { margin-left: -300%; }          /* Cuarta imagen */
+    76.66% { margin-left: -300%; }       /* Cuarta imagen */
+    80% { margin-left: -400%; }          /* Quinta imagen */
+    96.66% { margin-left: -400%; }       /* Quinta imagen */
+    100% { margin-left: -500%; }         /* Sexta imagen */
+    116.66% { margin-left: -500%; }      /* Sexta imagen */
+    120% { margin-left: -600%; }            /* Reinicio */
+    136.66% { margin-left: -600%; }
+}
+
+  /*@keyframes slide {
+    0%, 20% { margin-left: 0%; }
+    25%, 45% { margin-left: -100%; }
+    50%, 70% { margin-left: -200%; }
+    75%, 95% { margin-left: -300%; }
+    100% { margin-left: -400%; }
+    110% { margin-left: 0%; }
+}*/
+
+@media (max-width: 768px) {
+    .mejora_imagen {
+        height: 70vh;
+    }
+
+    .info_primera_pagina h1 {
+        font-size: 60px;
+    }
+
+    .info_primera_pagina p {
+        font-size: 20px;
+    }
+
+    .info_imagen h2 {
+        font-size: 30px;
+    }
+
+    .info_imagen p {
+        font-size: 18px;
+    }
+
+    .carrusel {
+        height: 70vh;
+    }
+
+    .parrafos {
+        font-size: 1.5em;
+        padding-left: 5%;
+    }
+
+    .caja1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 15px;
+    }
+
+    .foto-1, .foto-2, .foto-3, .foto-4{
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+      }
+}
+
+@media (max-width: 480px) {
+    .mejora_imagen {
+        height: 60vh;
+    }
+
+    .info_primera_pagina h1 {
+        font-size: 40px;
+    }
+
+    .info_primera_pagina p {
+        font-size: 18px;
+    }
+
+    .info_imagen h2 {
+        font-size: 24px;
+    }
+
+    .info_imagen p {
+        font-size: 14px;
+    }
+
+    .parrafos {
+        font-size: 1.2em;
+        padding-left: 3%;
+    }
+
+    .caja1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+    }
+
+    .imagen_seccion {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .bloque {
+        font-size: 1.2em;
+    }
+
+    a {
+        font-size: 1.2em;
+    }
+}
+
+.intro {
+    background-color: #ba9677;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.header_intro {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.caja1 {
+    border: 3px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+}
+
+.para_intro {
+    font-size: 1.5em;
+}
+
+.titulos {
+    color: #bc8e47;
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.color_parrafos {
+    font-size: 1em;
+    padding-left: 3%;
+}
+
+.imagen_seccion {
+    width: 600px; /* Tamaño reducido */
+    height: auto; /* Mantiene la proporción */
+    float: left; /* Hace que la imagen flote a la izquierda */
+    padding-left: 7%;
+    padding-top: 3%;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.intro{
+    background-color: #ba9677;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5%; 
+}
+
+.header_intro{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.caja1{
+    border: 3px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+}
+
+.para_intro{
+    font-size: 1.5em;
+}
+
+.parrafos{
+    color: #bc8e47;
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.color_parrafos {
+    font-size: 1em; /* Tamaño del párrafo */
+    color: #333; /* Color del texto */
+    text-align: justify;
+    margin: 0;
+}
+
+.imagen_seccion {
+    width: 600px; /* Tamaño reducido */
+    height: auto; /* Mantiene la proporción */
+    float: left; /* Hace que la imagen flote a la izquierda */
+    padding-left: 7%;
+    padding-top: 3%;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.caja2{
+    border: 3px solid black;
+    padding-left: 40%;
+    margin-right: 20%;
+    padding: 20px;
+}
+
+.titulos {
+    font-size: 1.8em; /* Tamaño del título */
+    font-weight: bold;
+    color: #bc8e47; /* Color del título */
+    margin: 0;
+}
