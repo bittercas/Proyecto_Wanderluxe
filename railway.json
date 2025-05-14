@@ -1,6 +1,3 @@
 {
-  "build": {
-    "builder": "null"
-  },
   "root": "proyecto_backend"
 }
