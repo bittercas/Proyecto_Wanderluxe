@@ -16,18 +16,6 @@ El proyecto ha sido desarrollado utilizando las siguientes tecnologías:
 - JavaScript (Vanilla)
 - PHP con Laravel
 - MySQL
-
----
-
-## Capturas de pantalla
-
-![Pantalla de inicio](![image](https://github.com/user-attachments/assets/ebbb0842-53cc-4ad0-8846-b3742ea3618d)
-)  
-![Inicio de sesións](![image](https://github.com/user-attachments/assets/dd88bc4d-a1b2-4ed0-bbb5-3768e6721474)
-)
-![Mis Viajes](![image](![image](https://github.com/user-attachments/assets/145da1ac-f562-4133-ad4f-cd6185c5d8ff)
-)
-
 ---
 
 ## Requisitos previos
@@ -79,7 +67,7 @@ php artisan serve
 
 Una vez el servidor esté activo, puedes acceder a la aplicación desde:
 
-📍 [http://localhost:8000](http://localhost:8000)
+[http://localhost:8000](http://localhost:8000)
 
 ### Funcionalidades principales:
 
@@ -90,7 +78,7 @@ Una vez el servidor esté activo, puedes acceder a la aplicación desde:
 
 ## Autor
 
-👤 **Vithr Castro**
+**Vither Castro**
 
 - GitHub: [[@user](https://github.com/user](https://github.com/bittercas))
 - LinkedIn: [LinkedIn]([https://www.linkedin.com/in/user/](https://www.linkedin.com/in/vither-castro-6243a3167/))
