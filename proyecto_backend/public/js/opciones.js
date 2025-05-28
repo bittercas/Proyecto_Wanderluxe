@@ -1,5 +1,8 @@
+// Creación de variable del botón del DOM
 const acceder = document.querySelectorAll('.boton');
 
+
+//Función para acceder a la sección correspondiente a su botón
 acceder.forEach(boton => {
     boton.addEventListener('click', function () {
         const id = this.dataset.id;

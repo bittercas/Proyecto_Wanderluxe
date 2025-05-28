@@ -1,4 +1,4 @@
-/* Asegura que html y body usen flex y ocupen toda la altura */
+/*Estilos para la vista mostrar.blade.php*/
 html, body {
     height: 100%;
     margin: 0;
@@ -7,9 +7,8 @@ html, body {
     flex-direction: column;
 }
 
-/* Sección principal que puede crecer para empujar el footer */
-.viajes-section {
-    flex: 1; /* ✅ Hace que esta sección ocupe el espacio disponible */
+.seccion_viajes {
+    flex: 1;
     padding: 4em 2em;
     background-image: url("/img/chongqing2.jpg");
     background-size: cover;
@@ -19,24 +18,23 @@ html, body {
     box-sizing: border-box;
 }
 
-.titulo-seccion {
+.titulo_seccion {
     margin: 7%;
     text-align: center;
     font-size: 2em;
     margin-bottom: 1.5em;
     color: whitesmoke;
     font-weight: bold;
-    font-family: "Manrope", sans-serif;
 }
 
-.contenedor-viajes {
+.contenedor_viajes {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
 }
 
-.tarjeta-viaje {
+.tarjeta_viaje {
     background-color: white;
     border: 2px solid #ba9677;
     border-radius: 15px;
@@ -45,24 +43,24 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
-    word-wrap: break-word; /* ✅ Previene desbordamiento de texto */
+    word-wrap: break-word;
 }
 
-.tarjeta-viaje:hover {
+.tarjeta_viaje:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.tarjeta-viaje h3 {
+.tarjeta_viaje h3 {
     color: #ba9677;
     margin-bottom: 0.8em;
 }
 
-.tarjeta-viaje p {
+.tarjeta_viaje p {
     font-size: 0.95em;
     color: #444;
     margin-bottom: 0.5em;
-    word-break: break-word; /* ✅ Previene que textos largos se salgan */
+    word-break: break-word;
 }
 
 #cerrar:hover {
@@ -178,9 +176,10 @@ html, body {
     margin-bottom: 15px;
 }
 
+/*Responsividad en distintas pantallas*/
 @media (max-width: 760px) {
 
-    .titulo-seccion {
+    .titulo_seccion {
         text-align: center;
         margin-top: 10%;
         font-size: 2em;
@@ -208,15 +207,14 @@ html, body {
         margin-bottom: 5px;
     }
 
-    ul li a,
-    .derecha_mostrar ul li {
+    ul li a, .derecha_mostrar ul li {
         font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
 
-    .titulo-seccion {
+    .titulo_seccion {
         text-align: center;
         margin-top: 10%;
         font-size: 1em;
@@ -233,8 +231,7 @@ html, body {
         font-size: 20px;
     }
 
-    .izquierda_mostrar ul li a,
-    .derecha_mostrar ul li {
+    .izquierda_mostrar ul li a, .derecha_mostrar ul li {
         font-size: 14px;
     }
 
@@ -243,8 +240,7 @@ html, body {
         margin-bottom: 5px;
     }
 
-    ul li a,
-    .derecha_mostrar ul li {
+    ul li a, .derecha_mostrar ul li {
         font-size: 12px;
     }
 }

@@ -1,29 +1,42 @@
+/*Estilos principales*/
 .exito {
-    margin-top: 5%;
+    margin-top: 8vh; /* más fluido según altura del viewport */
     color: whitesmoke;
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .volver {
     color: antiquewhite;
     text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 .volver a:hover {
     color: whitesmoke;
 }
 
+/*Media queries para responsividad*/
 @media screen and (max-width: 768px) {
     .exito {
-        margin-top: 15%;
-        font-size: 2em;
+        margin-top: 12vh;
+        font-size: 2rem;
+    }
+
+    .volver {
+        font-size: 1rem;
     }
 }
 
-/* Móviles */
 @media screen and (max-width: 480px) {
     .exito {
-        margin-top: 20%;
-        font-size: 0.5;
+        margin-top: 20vh;
+        font-size: 1.6rem;
+    }
+
+    .volver {
+        font-size: 0.9rem;
     }
 }

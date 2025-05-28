@@ -1,4 +1,95 @@
+/*Estilos para la vista mapa.blade.php*/
 #mapa {
     height: 800px;
     width: 100%;
+}
+
+#buscador_mapa {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    display: flex;
+    background-color: #fef9f4;
+    border: 1px solid #e0d9d1;
+    border-radius: 10px;
+    padding: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1100;
+}
+
+#busqueda {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #dbc7b1;
+    outline: none;
+    background-color: #fffaf6;
+    color: #333;
+    width: 180px;
+    font-family: "Lato", sans-serif;
+}
+
+#boton_busqueda {
+    background-color: #dbc7b1;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 8px 10px;
+    margin-left: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#boton_busqueda:hover {
+    background-color: #bca890;
+}
+
+/*Responsividad en distintas pantallas*/
+@media (max-width: 760px) {
+    #mapa {
+        height: 1000px;
+        width: 100%;
+    }
+
+    #buscador_mapa {
+        top: 90px;
+        right: 10px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #busqueda {
+        width: 140px;
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    #boton_busqueda {
+        font-size: 13px;
+        padding: 6px 8px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #mapa {
+        height: 1000px;
+        width: 100%;
+    }
+    #buscador_mapa {
+        top: 100px;
+        right: 10px;
+        padding: 4px;
+    }
+
+    #busqueda {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    #boton_busqueda {
+        font-size: 12px;
+        padding: 5px 7px;
+    }
 }

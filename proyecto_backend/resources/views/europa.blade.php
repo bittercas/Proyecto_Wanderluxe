@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/eiffel.jpg') }}">
+    <!--Estilos y fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,6 +14,7 @@
     <title>Destinos Mundiales</title>
 </head>
 <body>
+    <!--Menú de navegación-->
     <section id="inicio">
         <nav>
             <ul>
@@ -38,6 +42,7 @@
                 </li>
             </ul>
     </section>
+    <!--Función para traer los párrafos específicos y todos los registros de <continentes> de la base de datos-->
     <section id="islaPascua">
         <h1 class="header_isla">{{ $parrafos->firstWhere('id', 3)?->introduccion }}</h1><br>
         <p class="caja1">{{ $parrafos->firstWhere('id', 3)?->parrafo }}</p>
@@ -53,6 +58,7 @@
         </div>
         @endforeach
     </section>
+    <!--Footer-->
     <footer class="footer">
         <div class="final">
             <div class="secciones_footer">
@@ -80,6 +86,5 @@
             </div>
         </div>
     </footer>
-    <script src="js/index.js"></script>
 </body>
 </html>

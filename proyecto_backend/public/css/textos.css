@@ -1,3 +1,4 @@
+/*Estilos para la vista aventuras.blade.php, ciudades.blade.php y europa.blade.php*/
 .info_textos {
     position: absolute;
     text-align: center;
@@ -8,6 +9,7 @@
     color: #F5F5DC;
 }
 
+/*Responsividad en distintas pantallas*/
 @media screen and (max-width: 768px) {
     .info_textos {
         top: 40%;
@@ -15,7 +17,6 @@
     }
 }
 
-/* Móviles */
 @media screen and (max-width: 480px) {
     .info_textos {
         top: 30%;

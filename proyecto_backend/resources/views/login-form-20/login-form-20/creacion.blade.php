@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
   	<title>Registrarse</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/eiffel.jpg') }}">
+    <!--Estilos y fuentes-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -12,10 +14,8 @@
 	<link rel="stylesheet" href="{{ asset('css_bootstrap/style.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/intento.css') }}">
     <link rel="stylesheet" href="{{ asset('css/creacion.css') }}">
-
-	</head>
-	<body class="img js-fullheight" style="background-image: url(../../img/osaka.jpg);">
-
+</head>
+<body class="img js-fullheight" style="background-image: url(../../img/osaka.jpg);">
     <!-- Menú de navegación -->
     <section id="inicio_resgistro">
         <nav>
@@ -29,15 +29,16 @@
                         <li><a id="playas" href="{{ route('aventuras') }}">Aventuras y Naturaleza</a></li>
                     </ul>
                 </li>
+                <li class="bloque"><a class="enlacesInicio" id="inicioSesion" href="{{ route('login') }}">Iniciar sesión</a></li>
             </ul>
         </nav>
     </section>
-
-    <!-- Contenido del login -->
+    <!--Mensaje de éxito de registro-->
     <section class="ftco-section">
         <h1 class="exito">¡Usuario creado con éxito!</h1><br>
         <h4 class="volver" ><a href="{{ route('login') }}">Ir a inicio de sesión</a></h4>
     </section>
+    <!--Footer-->
 	<footer class="footer_ingreso">
         <div class="final">
             <div class="secciones_footer_ingreso">
@@ -45,7 +46,9 @@
                     <h4>Descubre</h4>
                     <ul>
                         <li><a href="{{ route('inicio') }}">Inicio</a></li>
-                        <li><a id="destinos_footer" href="destinos.html">Destinos</a></li>
+                        <li><a id="destinos_footer" href="{{ route('opciones') }}">Destinos</a></li>
+                        <li><a id="destinos_footer" href="{{ route('inicio') }}#nosotros">Nosotros</a></li>
+                        <li><a id="destinos_footer" href="{{ route('inicio') }}#islaPascua">Top Picks 2025</a></li>
                     </ul>
                 </div>
                 <div class="derecha_ingreso">
@@ -60,10 +63,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="{{ asset('js/formulario_registro.js') }}"></script>
-
     <!-- Scripts -->
+    <script src="{{ asset('js/formulario_registro.js') }}"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>

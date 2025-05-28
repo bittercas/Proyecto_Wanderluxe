@@ -5,18 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/eiffel.jpg') }}">
+    <!--Estilos y fuentes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
 	<link rel="stylesheet" href="{{ asset('css_bootstrap/style.css') }}">
-
 	<link rel="stylesheet" href="{{ asset('css/intento.css') }}">
-
-	</head>
-	<body class="img js-fullheight" style="background-image: url(../../img/capa.jpg);">
-
+</head>
+<body class="img js-fullheight" style="background-image: url(../../img/capa.jpg);">
     <!-- Menú de navegación -->
     <section id="inicio">
         <nav>
@@ -34,8 +32,7 @@
             </ul>
         </nav>
     </section>
-
-    <!-- Contenido del login -->
+    <!--Formulario de inicio de sesión-->
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -61,6 +58,7 @@
                             <div class="form-group">
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Ingresar</button>
                             </div>
+                            <!--Función para verificar mostrar si es incorrecto el login-->
                             @if (session('error'))
                             <div class="d-flex justify-content-center mt-3">
                             <div class="alert alert-danger text-center">
@@ -72,7 +70,7 @@
                                 <div class="w-50">
                                 </div>
                                 <div class="w-50 mx-auto text-md-right">
-                                    <a class="hover_enlace" href="{{ route('registrarse') }}" style="color: #fff">Registrate aquí.</a>
+                                    <a class="hover_enlace" href="{{ route('registrarse') }}">Registrate aquí.</a>
                                 </div>
                             </div>
                         </form>
@@ -81,6 +79,7 @@
             </div>
         </div>
     </section>
+    <!--Footer-->
 	<footer class="footer_ingreso">
         <div class="final">
             <div class="secciones_footer_ingreso">
@@ -105,18 +104,12 @@
             </div>
         </div>
     </footer>
-
-    <script src="{{ asset('js/sesion.js') }}"></script>
-
-    <!--<script>
-        var iniciarSesionUrl = "{{ route('iniciar.sesion') }}";
-    </script>-->
-
     <!-- Scripts -->
     <script src="{{ asset('js_boot/jquery.min.js') }}"></script>
     <script src="{{ asset('js_boot/popper.js') }}"></script>
     <script src="{{ asset('js_boot/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js_boot/main.js') }}"></script>
+    <script src="{{ asset('js/sesion.js') }}"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
         const dropdown = document.querySelector('.dropdown_resgistro');

@@ -1,30 +1,43 @@
-.opciones-section {
-    padding: 4em 2em;
-    background-image: url("/img/abu4.jpg");
-    background-size: cover;            /* Ajusta el tamaño al viewport */
-    background-repeat: no-repeat;      /* Evita que se repita */
-    background-attachment: fixed;      /* Para efecto de parallax */
-    background-position: center; 
+/*Estilos para la vista opciones.blade.php*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
 }
 
-.opciones-seccion {
+.seccion_opciones {
+    flex: 1;
+    padding: 4em 2em;
+    background-image: url("/img/abu4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    box-sizing: border-box;
+}
+
+.seccion_opciones2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 1.5em;
     margin-top: 1em;
     color: #ba9677;
     font-weight: bold;
-    font-family: "Manrope", sans-serif;
 }
 
-.contenedor-opciones {
+/* Contenedor de tarjetas */
+.contenedor_opciones {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
 }
 
-.tarjeta-opciones {
+.tarjeta_opciones {
     background-color: white;
     border: 3px solid #7cb46b;
     border-radius: 12px;
@@ -34,17 +47,17 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjeta-opciones:hover {
+.tarjeta_opciones:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.tarjeta-opciones h3 {
+.tarjeta_opciones h3 {
     color: #ba9677;
     margin-bottom: 0.8em;
 }
 
-.tarjeta-opciones p {
+.tarjeta_opciones p {
     font-size: 0.95em;
     color: #444;
     margin-bottom: 0.5em;
@@ -61,7 +74,7 @@
     border: none;
     border-radius: 5px;
     font-weight: 500;
-    font-size: 0.75rem; /* ~12px */
+    font-size: 0.75rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -77,38 +90,90 @@
     align-items: center;
 }
 
-.opciones-imagen {
+.opciones_imagen {
     width: 230px;
     height: 150px;
 }
 
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2em 1em;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+.secciones_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.izquierda, .derecha {
+    width: 45%;
+    padding: 0 10px;
+}
+
+.izquierda h4, .derecha h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: whitesmoke;
+    border-bottom: 2px solid #ba9677;
+}
+
+.izquierda ul, .derecha ul {
+    list-style: none;
+    padding: 0;
+}
+
+.izquierda ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+.izquierda ul li a:hover {
+    color: whitesmoke;
+}
+
+/*Responsividad en distintas pantallas*/
 @media screen and (max-width: 768px) {
-    .opciones-seccion {
+    .seccion_opciones2 {
         font-size: 1.6em;
         margin-top: 0.8em;
     }
 
-    .tarjeta-opciones {
+    .tarjeta_opciones {
         max-width: 90%;
     }
 
-    .opciones-imagen {
+    .opciones_imagen {
         max-width: 100%;
         height: auto;
+    }
+
+    .izquierda, .derecha {
+        width: 100%;
+        margin-bottom: 1em;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .opciones-seccion {
+    .seccion_opciones2 {
         font-size: 1.4em;
         margin-top: 0.5em;
     }
 
-    .tarjeta-opciones {
+    .tarjeta_opciones {
         padding: 1em;
     }
 
-    .tarjeta-opciones p {
+    .tarjeta_opciones p {
         font-size: 0.9em;
     }
 
@@ -119,5 +184,13 @@
 
     .boton {
         font-size: 0.7rem;
+    }
+
+    .izquierda h4, .derecha h4 {
+        font-size: 16px;
+    }
+
+    .izquierda ul li a, .derecha ul li {
+        font-size: 13px;
     }
 }

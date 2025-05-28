@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
+/*Estilos para la vista editar.blade.php*/
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +7,9 @@
 
 html, body {
     background-image: url(../../img/nevado.jpg);
-    background-size: cover; /* Hace que la imagen cubra toda la ventana */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Hace que la imagen se mueva con el contenido */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 100%;
     margin: 0;
 }
@@ -30,18 +29,17 @@ body {
     box-shadow: none;
 }
 
-/* 🔹 Imagen de bienvenida */
+
 .imagen_bienvenida {
     width: 100%;
-    height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+    height: 100%;
     object-fit: cover;
 }
 
 .imagen_bienvenida {
-    object-position: top; /* Cambia la imagen para que se enfoque en la parte superior */
+    object-position: top; 
 }
 
-/* 🔹 Texto debajo de la imagen */
 .info_bienvenida {
     text-align: center;
     margin-top: 20px;
@@ -49,14 +47,28 @@ body {
     color: #333;
 }
 
-/* 🔹 Responsividad */
+.texto-header {
+    color: beige;
+}
+
+/*Media queries para responsividad en distintas pantallas*/
 @media (max-width: 768px) {
+
+    .imagen-fotografo {
+        display: none;
+    }
+
     .contenedor_imagen {
         height: 60vh;
     }
 
     .info_bienvenida {
         font-size: 1.5rem;
+    }
+
+    .texto-header {
+        margin-top: 50%;
+        font-size: 2em;
     }
 }
 
@@ -67,5 +79,10 @@ body {
 
     .info_bienvenida {
         font-size: 1.2rem;
+    }
+
+    .texto-header {
+        margin-top: 60%;
+        font-size: 1.5em;
     }
 }

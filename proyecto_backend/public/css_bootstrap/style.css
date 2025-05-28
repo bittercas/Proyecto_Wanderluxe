@@ -4,6 +4,8 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ /*Estilos para todos los formularios usados en la aplicación*/
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -47,9 +49,9 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
   html, body {
-    height: 100%; /* Asegura que HTML y body ocupen toda la altura */
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina el padding predeterminado */
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     display: flex;
@@ -60,9 +62,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
-    background-size: cover; /* Hace que la imagen cubra toda la ventana */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Hace que la imagen se mueva con el contenido */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
     font-size: 1rem;
     font-weight: 400;
@@ -8359,6 +8361,7 @@ textarea.form-control {
         background: #fbceb5;
         color: #fff; }
 
+        /*Ajuste del menú para las vistas donde se muestran los formularios*/
         #inicio_resgistro {
           position: fixed;
           background-color: beige;
@@ -8376,7 +8379,6 @@ textarea.form-control {
       .enlacesInicio_resgistro {
           font-size: 1.5em;
           font-weight: bold;
-          font-family: "Manrope", sans-serif;
           text-decoration: none;
           list-style-type: none;
           padding: 0.7em 1em;
@@ -8389,24 +8391,24 @@ textarea.form-control {
       }
       
       .menu_resgistro {
-          display: none; /* Oculta el menú inicialmente */
+          display: none;
           position: absolute;
           background-color: beige;
           list-style: none;
           padding: 10px;
           border: 1px solid #ccc;
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-          top: 100%; /* Coloca el submenú debajo del enlace "Destinos" */
+          top: 100%;
           left: 0;
           width: 150px;
       }
       
       .dropdown_resgistro {
-          position: relative; /* Necesario para que el menú se posicione bien */
+          position: relative;
       }
       
       .dropdown_resgistro:hover .menu_resgistro {
-          display: block; /* Muestra el menú al pasar el mouse */
+          display: block;
       }
       
       .menu_resgistro li {
@@ -8423,24 +8425,22 @@ textarea.form-control {
       .menu_resgistro li a {
           font-size: 1em;
           font-weight: bold;
-          font-family: "Manrope", sans-serif;
           text-decoration: none;
           list-style-type: none;
           padding: 0.7em 1em;
           color: rgba(52, 46, 46, 0.562);
       }
     
-    /* Ajustes del video */
     video {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Ajusta el video sin distorsionarlo */
+        object-fit: cover;
     }
 
 .footer_ingreso {
-  margin-top: auto; /* Empuja el footer hacia el final de la página */
+  margin-top: auto;
   width: 100%;
-  background-color: #100c08; /* Esto puedes cambiarlo según tu diseño */
+  background-color: #100c08;
   color: white;
   padding: 1rem;
   }
@@ -8508,32 +8508,32 @@ textarea.form-control {
 
 @media (max-width: 768px) { 
   .ftco-section {
-      padding: 10px 0; /* Reduce aún más el espacio superior e inferior */
+      padding: 10px 0;
   }
 
   .login-wrap {
-      padding: 10px; /* Reduce el padding del formulario */
-      max-width: 300px; /* Reduce el ancho máximo del formulario */
-      margin: auto; /* Centra el formulario */
+      padding: 10px;
+      max-width: 300px;
+      margin: auto;
   }
 
   .col-md-6, .col-lg-4 {
-      width: 85%; /* Reduce el ancho del formulario */
+      width: 85%;
   }
 
   h2.heading-section {
-      font-size: 20px; /* Reduce el tamaño del título */
+      font-size: 20px;
       margin-bottom: 15px;
   }
 
   h3 {
-      font-size: 16px; /* Reduce el tamaño de subtítulos */
+      font-size: 16px;
   }
 
   .form-control {
-      font-size: 13px; /* Reduce el tamaño del texto de los inputs */
-      padding: 6px; /* Reduce el padding de los inputs */
-      height: 35px; /* Reduce la altura de los inputs */
+      font-size: 13px;
+      padding: 6px;
+      height: 35px;
   }
 
   .btn {
@@ -8543,30 +8543,30 @@ textarea.form-control {
   }
 
   .form-group {
-      margin-bottom: 10px; /* Reduce la separación entre campos */
+      margin-bottom: 10px;
   }
 }
 
 @media (max-width: 768px) {
   .footer_ingreso {
-      padding: 10px 0; /* Reduce el espacio interno */
-      font-size: 12px; /* Reduce el tamaño de la fuente */
-      text-align: center; /* Centra los textos */
+      padding: 10px 0;
+      font-size: 12px;
+      text-align: center;
   }
 
   .secciones_footer_ingreso {
       display: flex;
-      flex-direction: column; /* Organiza los elementos en columna */
+      flex-direction: column;
       align-items: center;
   }
 
   .izquierda_ingreso, .derecha_ingreso {
-      width: 90%; /* Reduce el ancho */
-      margin-bottom: 10px; /* Menos espacio entre secciones */
+      width: 90%;
+      margin-bottom: 10px;
   }
 
   h4 {
-      font-size: 14px; /* Reduce el tamaño de los títulos */
+      font-size: 14px;
       margin-bottom: 5px;
   }
 
@@ -8577,7 +8577,7 @@ textarea.form-control {
   }
 
   ul li {
-      margin-bottom: 5px; /* Reduce la separación entre elementos */
+      margin-bottom: 5px;
   }
 }
          

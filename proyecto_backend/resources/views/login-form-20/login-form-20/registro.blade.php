@@ -1,207 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Registrarse</title>
-	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,600" rel="stylesheet">
-	
-	<link type="text/css" rel="stylesheet" href="colorlib-booking-7.2/colorlib-booking-7/css/bootstrap.min.css" />
-	
-    <link rel="stylesheet" href="css/intento.css">
-	<link type="text/css" rel="stylesheet" href="css/registro.css" />
-
-</head>
-<body>
-    <section id="inicio">
-        <nav>
-            <ul>
-                <li class="bloque"><a class="enlacesInicio" href="index.html">Inicio</a></li>
-                <li class="bloque dropdown">
-                    <a class="enlacesInicio" id="destinos" href="destinos.html">Destinos</a>
-                    <ul class="menu">
-                        <li><a id="america" href="america.html">América</a></li>
-                        <li><a id="europa" href="europa.html">Europa</a></li>
-                        <li><a id="africa" href="africa.html">África</a></li>
-                        <li><a id="asia" href="asia.html">Asia</a></li>
-                        <li><a id="oceania" href="oceania.html">Oceanía</a></li>
-                        <li><a id="ciudades" href="ciudades.html">Ciudades</a></li>
-                        <li><a id="playas" href="playas_islas.html">Playas e Islas</a></li>
-                        <li><a id="naturaleza" href="naturaleza.html">Naturaleza</a></li>
-                        <li><a id="aventuras" href="aventuras.html">Aventuras únicas</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    <section>
-        <div>
-            <ul>
-                <li>
-                    <img class="mejora_imagen" src="img/playa.jpg" alt="Europa">
-                    <div id="booking" class="section">
-                        <div class="section-center">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="booking-form">
-                                        <form>
-                                            <div class="col-md-8">
-                                                <div class="form-group">
-                                                    <input class="form-control" type="text" placeholder="Enter Address, zip, city or airport">
-                                                    <span class="form-label">Destination</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                    <span class="form-label">Guests</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                    <span class="form-label">Children</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input class="form-control" type="date" required>
-                                                    <span class="form-label">Check In</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <input class="form-control" type="date" required>
-                                                    <span class="form-label">Check out</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-btn">
-                                                    <button class="submit-btn">Check availability</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </li>
-            </ul>
-    </section>
-</body>
-<script src="js/index.js"></script>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/registro.css">
-    <link rel="stylesheet" href="css/intento.css">
-    <title>Registrarse</title>
-</head>
-<body>
-    <section id="inicio">
-        <nav>
-            <ul>
-                <li class="bloque"><a class="enlacesInicio" href="index.html">Inicio</a></li>
-                <li class="bloque dropdown">
-                    <a class="enlacesInicio" id="destinos" href="destinos.html">Destinos</a>
-                    <ul class="menu">
-                        <li><a id="america" href="america.html">América</a></li>
-                        <li><a id="europa" href="europa.html">Europa</a></li>
-                        <li><a id="africa" href="africa.html">África</a></li>
-                        <li><a id="asia" href="asia.html">Asia</a></li>
-                        <li><a id="oceania" href="oceania.html">Oceanía</a></li>
-                        <li><a id="ciudades" href="ciudades.html">Ciudades</a></li>
-                        <li><a id="playas" href="playas_islas.html">Playas e Islas</a></li>
-                        <li><a id="naturaleza" href="naturaleza.html">Naturaleza</a></li>
-                        <li><a id="aventuras" href="aventuras.html">Aventuras únicas</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </section>
-        <img class="mejora_imagen" src="img/playa.jpg" alt="Eruopa">
-            <div class="info_form">
-                <h1 class="tituloSesion">Regístrate</h1>
-                <form id="formulario" action="#" method="POST">
-                    <div class="primero">
-                        <label for="nombre">Nombre <span class="obligatorio">*</span></label>
-                        <input type="text" name="nombre" id="nombre" required>
-                    </div>
-        
-                    <div class="segundo">
-                        <label for="apellido">Apellido <span class="obligatorio">*</span></label>
-                        <input type="text" name="apellido" id="apellido" required>
-                    </div>
-        
-                    <div class="tercero">
-                        <label for="correo">Correo <span class="obligatorio">*</span></label>
-                        <input type="email" name="correo" id="correo" required>
-                    </div>
-        
-                    <div class="cuarto">
-                        <label for="contrasenya">Contraseña <span class="obligatorio">*</span></label>
-                        <input type="password" name="contrasenya" id="contrasenya" required>
-                    </div>
-        
-                    <div class="quinto">
-                        <label for="confirmar_contrasenya">Confirmar Contraseña <span class="obligatorio">*</span></label>
-                        <input type="password" name="confirmar_contrasenya" id="confirmar_contrasenya" required>
-                    </div>
-        
-                    <div>
-                        <button type="submit" class="ingreso">Registrarse</button>
-                    </div><br>
-                    
-                    <p class="marcado">Los campos marcados con asterisco son obligatorios.</p>
-                </form>
-            </div>
-    <footer class="footer">
-        <div class="final">
-            <div class="secciones_footer">
-                <div class="izquierda">
-                    <h4>Descubre</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a id="destinos_footer" href="destinos.html">Destinos</a></li>
-                    </ul>
-                </div>
-                <div class="derecha">
-                    <h4>Información</h4>
-                    <ul>
-                        <li>&copy; 2025 WanderLuxe. Todos los derechos reservados.</li>
-                        <li>Instagram: @bittercastro</li>
-                        <li>Email: vithercj@gmail.com</li>
-                        <li>Síguenos para más inspiración cada día</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/index.js"></script>
-</body>
-</html>-->
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -209,18 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/eiffel.jpg') }}">
+    <!--Estilos y fuentes-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
 	<link rel="stylesheet" href="{{ asset('css_bootstrap/style.css') }}">
-
 	<link rel="stylesheet" href="{{ asset('css/intento.css') }}">
-
 	</head>
 	<body class="img js-fullheight" style="background-image: url(../../img/india.jpg);">
-
     <!-- Menú de navegación -->
     <section id="inicio">
         <nav>
@@ -238,8 +32,7 @@
             </ul>
         </nav>
     </section>
-
-    <!-- Contenido del login -->
+    <!--Formulario para registro de usuario-->
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -257,10 +50,6 @@
                                 <input id="name-field" type="text" name="name" class="form-control" placeholder="Nombre" required>
                                 <p id="restriccion-nombre"></p>
                             </div>
-                            <!--<div class="form-group">
-                                <input id="lastname-field" type="text" name="apellido" class="form-control" placeholder="Apellido" required>
-                                <p id="restriccion-apellido"></p>
-                            </div>-->
                             <div class="form-group">
                                 <input id="email-field" type="text" name="email" class="form-control" placeholder="Correo" required>
                                 <p id="restriccion-correo"></p>
@@ -273,12 +62,13 @@
                             <p id="restriccion-contra"></p>
                             <div class="form-group">
                                 <input id="password-field-confirm" type="password" name="contrasenya_confirmation" class="form-control" placeholder="Confirmar contraseña" required>
-                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                <span toggle="#password-field-confirm" class="fa fa-fw fa-eye field-icon toggle-password2"></span>
                             </div>
                             <p id="verificacion-contra"></p>
                             <div class="form-group">
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Registrar</button>
                             </div>
+                            <!--Mnesaje de error si hay un problema con el registro-->
                             @if (session('error'))
                             <div class="d-flex justify-content-center mt-3">
                             <div class="alert alert-danger text-center">
@@ -290,7 +80,7 @@
                                 <div class="w-50">
                                 </div>
                                 <div class="w-50 mx-auto text-md-right">
-                                    <a class="hover_enlace" href="{{ route('login') }}" style="color: #fff">Inicia sesión aquí.</a>
+                                    <a class="hover_enlace" href="{{ route('login') }}">Inicia sesión aquí.</a>
                                 </div>
                                 <h4 id="creacion"></h4>
                             </div>
@@ -300,6 +90,7 @@
             </div>
         </div>
     </section>
+    <!--Footer-->
 	<footer class="footer_ingreso">
         <div class="final">
             <div class="secciones_footer_ingreso">
@@ -324,10 +115,8 @@
             </div>
         </div>
     </footer>
-
+    <!--Scripts-->
     <script src="{{ asset('js/formulario_registro.js') }}"></script>
-
-    <!-- Scripts -->
     <script src="{{ asset('js_boot/jquery.min.js') }}"></script>
     <script src="{{ asset('js_boot/popper.js') }}"></script>
     <script src="{{ asset('js_boot/bootstrap.min.js') }}"></script>
