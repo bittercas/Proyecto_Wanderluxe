@@ -34,39 +34,39 @@ Asegúrate de tener instaladas las siguientes herramientas:
 
 Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
-# 1. Clona el repositorio
+### 1. Clona el repositorio
 ```bash
 git clone git@github.com:gioudi/repository.git
 ```
 
-# 2. Accede al directorio del proyecto
+### 2. Accede al directorio del proyecto
 ```bash
 cd Proyecto_Wanderluxe
 ```
 
-# 3. Instala dependencias de Node.js
+### 3. Instala dependencias de Node.js
 ```bash
 npm install
 ```
 
-# 4. Instala dependencias de PHP (Laravel)
+### 4. Instala dependencias de PHP (Laravel)
 ```bash
 composer install
 ```
 
-# 5. Copia el archivo de entorno
+### 5. Copia el archivo de entorno
 ```bash
 cp .env.example .env
 ```
 
-# 6. Configura tus credenciales de base de datos en el archivo .env
+### 6. Configura tus credenciales de base de datos en el archivo .env
 
-# 7. Ejecuta las migraciones para crear las tablas necesarias
+### 7. Ejecuta las migraciones para crear las tablas necesarias
 ```bash
 php artisan migrate
 ```
 
-# 8. Inicia el servidor de desarrollo de Laravel
+### 8. Inicia el servidor de desarrollo de Laravel
 ```bash
 php artisan serve
 ```
