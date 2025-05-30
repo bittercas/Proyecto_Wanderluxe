@@ -94,8 +94,8 @@ Una vez el servidor esté activo, puedes acceder a la aplicación desde:
 
 **Vither Castro**
 
-- GitHub: [[@user](https://github.com/user](https://github.com/bittercas))
-- LinkedIn: [LinkedIn]([https://www.linkedin.com/in/user/](https://www.linkedin.com/in/vither-castro-6243a3167/))
+- GitHub: [[@user](https://github.com/user](https://github.com/bittercas)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/vither-castro-6243a3167/)
 
 ## Contribuciones
 
