@@ -65,8 +65,12 @@ cp .env.example .env
 ```bash
 php artisan migrate
 ```
+### 8. Ejecuta los seeders para añadir los datos estáticos a la base de datos
+```bash
+php artisan migrate
+```
 
-### 8. Inicia el servidor de desarrollo de Laravel
+### 9. Inicia el servidor de desarrollo de Laravel
 ```bash
 php artisan serve
 ```
