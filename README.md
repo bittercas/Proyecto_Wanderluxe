@@ -25,7 +25,7 @@ Asegúrate de tener instaladas las siguientes herramientas:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
 - [Composer](https://getcomposer.org/)
-- Servidor local con PHP y MySQL (yo he usado: XAMPP)
+- Servidor local con PHP y MySQL (recomendado XAMPP)
 - Editor de código (por ejemplo: [Visual Studio Code](https://code.visualstudio.com/))
 
 ---
