@@ -50,6 +50,10 @@ body {
     color: beige;
 }
 
+#cerrar:hover {
+    color: rgb(176, 13, 13);
+}
+
 /*Responsividad en distintas pantallas*/
 @media (max-width: 768px) {
 
