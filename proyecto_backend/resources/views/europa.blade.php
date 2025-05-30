@@ -67,8 +67,8 @@
                     <ul>
                         <li><a href="{{ route('inicio') }}">Inicio</a></li>
                         <li><a id="destinos_footer" href="{{ route('opciones') }}">Destinos</a></li>
-                        <li><a class="enlacesInicio" href="{{ route('inicio') }}#nosotros">Nosotros</a></li>
-                        <li><a class="enlacesInicio" href="{{ route('inicio') }}#islaPascua">Top Picks 2025</a></li>
+                        <li><a class="destinos_footer" href="{{ route('inicio') }}#nosotros">Nosotros</a></li>
+                        <li><a class="destinos_footer" href="{{ route('inicio') }}#islaPascua">Top Picks 2025</a></li>
                     </ul>
                 </div>
                 <div class="derecha">

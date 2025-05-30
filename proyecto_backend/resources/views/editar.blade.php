@@ -22,7 +22,7 @@
             <li class="bloque"><a class="enlacesInicio" href="{{ route('privada') }}">Inicio</a></li>
             <li class="bloque"><a class="enlacesInicio" href="{{ route('planificar') }}">Planificar Mi Viaje</a></li>
             <li class="bloque"><a class="enlacesInicio" href="{{ route('mostrarViajes') }}">Mis Viajes</a></li>
-            <li><a class="enlacesInicio" href="{{ route('mapa') }}">Mapa</a></li>
+            <li class="bloque"><a class="enlacesInicio" href="{{ route('mapa') }}">Mapa</a></li>
             <li class="bloque"><a class="enlacesInicio" id="cerrar" href="{{ route('logout') }}">Cerrar Sesión</a></li>
         </ul>
     </nav>

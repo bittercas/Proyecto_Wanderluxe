@@ -96,48 +96,58 @@ html, body {
 }
 
 .footer {
+    margin-top: auto;
     width: 100%;
     background-color: black;
     color: white;
-    padding: 2em 1em;
-    margin-top: auto;
-    font-size: 0.9em;
+    padding: 1rem;
 }
 
 .secciones_footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.izquierda, .derecha {
-    width: 45%;
+.izquierda, .derechas {
+    width: 25%;
     padding: 0 10px;
 }
 
 .izquierda h4, .derecha h4 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 25px;
     color: whitesmoke;
+    margin-bottom: 25px;
+    font-weight: 500;
     border-bottom: 2px solid #ba9677;
+    display: inline-block;
 }
 
-.izquierda ul, .derecha ul {
+.izquierda ul, .derecha ul{
     list-style: none;
-    padding: 0;
 }
 
 .izquierda ul li a {
+    list-style: none;
+    font-size: 15px;
     text-decoration: none;
     color: white;
-    font-size: 14px;
     display: block;
-    margin-bottom: 8px;
-    transition: all 0.2s ease;
+    margin-bottom: 10px;
+    transition: all .2s ease;
 }
 
-.izquierda ul li a:hover {
-    color: whitesmoke;
+.izquierda ul li a:hover{
+    color: #ba9677;
+    padding-right: 20px;
+}
+
+.derecha ul li {
+    list-style: none;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
 }
 
 /*Responsividad en distintas pantallas*/
